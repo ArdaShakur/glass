@@ -1,0 +1,17 @@
+@each $key, $val in $colors {
+    .input-txt-#{$key} {
+        border: none;
+        border-bottom: 2px solid $val;
+        outline: none;
+    }
+
+    .slct-#{$key} {
+        width: 100%;
+        padding: $base-padding;
+        border: none;
+        border-radius: 30px;
+        background-color: $val;
+        outline: none;
+        font-size: $base-font-size ;
+    }
+}
